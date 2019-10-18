@@ -1,0 +1,34 @@
+<!-- Bij deze een simpel javascriptje om de charactercodes van een string 1 t/m 26 plaatsen op te schuiven in de ascii tabel-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cipher</title>
+</head>
+
+<body>
+	<input type="text" id="begintext" placeholder="Begintext">
+	<button onclick="calculateCipher()">Run Script!</button>
+	<div id="cipher">
+	</div>
+
+	<script>
+
+			function calculateCipher() {
+				// Empty the previous try
+				document.getElementById("cipher").innerHTML = "";
+				let startingString = document.getElementById("begintext").value;
+				//startingString = startingString.toLowerCase();
+				
+				for( let i = 0; i <= 26; i++ ) {
+					let newString = "";
+					for ( let x = 0; x < startingString.length; x++) {
+						let newcharCode = startingString.charCodeAt(x) + i;		
+						newString += String.fromCharCode(newcharCode);
+					}
+					document.getElementById("cipher").innerHTML += "<b>" + newString + "</b><br>";
+				}
+			}
+		</script>
+</body>
+
+</html>
