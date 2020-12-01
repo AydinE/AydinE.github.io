@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:100);
+
+
+#app {
+    background-image: url("https://a0.muscache.com/im/pictures/79a6affa-9ce0-44ee-b53a-4669c32be362.jpg?im_w=1200"), linear-gradient(rgba(4, 30, 85, 0.8),rgba(4, 30, 85,0.8));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top:0;
+    min-height: 100%;
+}
+
+.countdown {
+  display: flex;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.text {
+    color: #1abc9c;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', serif;
+    font-weight: 40;
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.digit {
+    color: #ecf0f1;
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Roboto', serif;
+    margin: 10px;
+    text-align: center;
+}

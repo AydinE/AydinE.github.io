@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekendje weg countdown</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./countdown.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <countdown date="2020-12-11 14:00:00"></countdown>
+    </div>
+
+    <template id="countdown-template">
+        <div class="countdown">
+            <div class="block">
+                <p class="digit">{{ days | two_digits }}</p>
+                <p class="text">Dagen</p>
+            </div>
+            <div class="block">
+                <p class="digit">{{ hours | two_digits }}</p>
+                <p class="text">Uren</p>
+            </div>
+            <div class="block">
+                <p class="digit">{{ minutes | two_digits }}</p>
+                <p class="text">Minuten</p>
+            </div>
+            <div class="block">
+                <p class="digit">{{ seconds | two_digits }}</p>
+                <p class="text">Secondes</p>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        var app = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+
+</html>
