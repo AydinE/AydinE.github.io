@@ -1,0 +1,187 @@
+/**
+* General
+*/
+body {
+    color: white !important;
+    background-color: #26262b !important;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+h2 {
+    font-weight: 700;
+}
+
+a {
+    color: #15ffab !important;
+}
+
+.accent {
+    color: #15ffab !important;
+}
+
+.page-link:hover {
+    text-decoration: none;
+}
+
+/**
+* Frontpage
+*/
+.fp-title {
+    font-size: 36px;
+}
+
+.fp-fadein-title {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+.fp-fadein-title-2{
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+.fp-fadein-subtitle {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+
+/**
+* Nav-Wrapper
+*/
+.nav-wrapper {
+    max-width: -webkit-calc((#{$content-width} * 2) - (#{$spacing-unit}));
+    max-width: calc((#{$content-width} * 2) - (#{$spacing-unit}));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit;
+        padding-left: $spacing-unit;
+    }
+}
+
+.post-title{
+    color: #15ffab !important;
+}
+
+.site-nav {
+    background-color: #26262b !important;
+    font-weight: 900;
+}
+
+.post-meta {
+    color: darkgray;
+}
+
+.site-title{
+    color: white !important;
+    font-weight: 900;
+    font-size: large;
+    border: 3px solid #15ffab;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    line-height: inherit;
+}
+
+.site-header{
+    border-bottom: none;
+}
+
+.site-title:hover{
+    text-decoration: none;
+}
+
+.extrapadding {
+    padding-right: 10px !important;
+}
+
+.post-list-heading {
+    color: white !important;
+}
+
+.four-oh-four {
+    color: #15ffab;
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+    background-color: #212121 !important;
+    border-top: none;
+    padding-top: 30px;
+}
+
+.copyright-footer {
+    padding-top: 1rem;
+    background-color: #121212 !important;
+    margin-bottom: 0;
+    text-align: center;
+    color: darkgray;
+}
+
+.p-name {
+    color: darkgray;
+}
+
+/**
+* Media queries
+*/
+@media screen and (max-width: 600px) {
+    .site-nav {
+        border: none;
+    }
+    .site-nav .menu-icon > svg {
+        fill: white;
+    }
+}
+
+/**
+* Animations
+*/
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
