@@ -1,6 +1,11 @@
 /**
 * General
 */
+.wrapper{
+    max-width: -webkit-calc(950px - (30px));
+    max-width: calc(950px - (30px));
+}
+
 body {
     color: white !important;
     background-color: #26262b !important;
@@ -45,11 +50,19 @@ a {
     -webkit-animation: fadein 4s; /* Safari and Chrome */
     -o-animation: fadein 4s; /* Opera */
 }
+.fp-fadein-role{
+    animation: fadein 9s;
+    -moz-animation: fadein 9s; /* Firefox */
+    -webkit-animation: fadein 9s; /* Safari and Chrome */
+    -o-animation: fadein 9s; /* Opera */
+    color: #f92672;
+}
 .fp-fadein-subtitle {
     animation: fadein 5s;
     -moz-animation: fadein 5s; /* Firefox */
     -webkit-animation: fadein 5s; /* Safari and Chrome */
     -o-animation: fadein 5s; /* Opera */
+    font-size: 24px;
 }
 
 /**
